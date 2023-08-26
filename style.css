@@ -21,7 +21,7 @@ main {
     padding: 3%;
     border-radius: 1rem;
     width: 40vw;
-    height: 40vh;
+    height: 42vh;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
@@ -29,7 +29,7 @@ h1 {
     font-size: 5vw;
 }
 
-form {
+article {
     display: flex;
     flex-direction: row;
     gap: 3vw;
@@ -41,13 +41,16 @@ div {
 }
 
 label {
-    font-size: 2.5vw;
+    width: 100%;
+    font-size: 1.5vw;
     text-align: center;
 }
 
 input {
-    width: 15vw;
+    width: 10vw;
     height: 3vh;
+    font-size: 1vw;
+    color: #00858e;
 }
 
 button {
@@ -55,21 +58,11 @@ button {
   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
   border: 0;
   border-radius: 8px;
-  box-sizing: border-box;
   color: #FFFFFF;
-  display: flex;
   font-family: Phantomsans, sans-serif;
   font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
   padding: 19px 24px;
-  text-decoration: none;
   user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -79,14 +72,3 @@ button:hover {
     bottom: 2px;
 }
 
-.button-63:active,
-.button-63:hover {
-  outline: 0;
-}
-
-@media (min-width: 768px) {
-  .button-63 {
-    font-size: 24px;
-    min-width: 196px;
-  }
-}
