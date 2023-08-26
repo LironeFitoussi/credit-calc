@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function creditCalc(price, payments) {
+            var extra = price % payments;
+            var paymentPerMonth = (price - extra) / payments; 
+            var firstPayment = paymentPerMonth + extra;
+
+            console.log("First Payment: " + firstPayment);
+            console.log("Every other month: " + paymentPerMonth);
+        }
+
+        creditCalc(100, 11)
+    </script>
+</body>
+</html>
