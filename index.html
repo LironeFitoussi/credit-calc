@@ -1,21 +1,46 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Credit Calculator</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <main>
+        <h1>Credit Calculator</h1>
+        <form>
+            <div>
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" step="any"><br><br>
+            </div>
+            
+            <div>
+                <label for="payments">Payments:</label>
+                <input type="number" id="payments" name="payments" step="1"><br><br>
+            </div>
+            
+        </form>
+        
+        
+        <button onclick="calculate()">Calculate</button>
+        
+        <p id="result"></p>
+    </main>
+   
+    
     <script>
-        function creditCalc(price, payments) {
+        function calculate() {
+            var price = parseFloat(document.getElementById("price").value);
+            var payments = parseInt(document.getElementById("payments").value);
+            
             var extra = price % payments;
             var paymentPerMonth = (price - extra) / payments; 
             var firstPayment = paymentPerMonth + extra;
-
-            console.log("First Payment: " + firstPayment);
-            console.log("Every other month: " + paymentPerMonth);
+            
+            var resultParagraph = document.getElementById("result");
+            resultParagraph.textContent = "First Payment: " + firstPayment.toFixed(2) + "\nEvery other month: " + paymentPerMonth.toFixed(2);
         }
-
-        creditCalc(100, 11)
     </script>
 </body>
 </html>
