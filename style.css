@@ -25,6 +25,8 @@ main {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
+
+
 h1 {
     font-size: 5vw;
 }
@@ -72,3 +74,32 @@ button:hover {
     bottom: 2px;
 }
 
+@media screen and (max-width: 425px) {
+    main {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    article {
+        flex-direction: column;
+        width: 60vw;
+        align-items: center;
+        gap: 3vh;
+        margin-bottom: 3vh;
+    }
+    
+    div {
+        align-items: center;
+    }
+
+    label {
+        font-size: 5vw;
+        width: 60vw;    
+    }
+
+    input {
+        width: 90%;
+    }
