@@ -34,7 +34,8 @@ h1 {
 article {
     display: flex;
     flex-direction: row;
-    gap: 3vw;
+    gap: 5vw;
+    margin-bottom: 3vh;
 }
 
 div {
@@ -87,8 +88,7 @@ button:hover {
         flex-direction: column;
         width: 60vw;
         align-items: center;
-        gap: 3vh;
-        margin-bottom: 3vh;
+
     }
     
     div {
